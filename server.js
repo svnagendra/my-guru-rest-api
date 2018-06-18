@@ -9,6 +9,12 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/name', function(req, res) {
+  res.send({
+    "Output": "Hello World! My Name is Test."
+  });
+});
+
 app.post('/', function(req, res) {
   res.send({
     "Output": "Hello World!"
