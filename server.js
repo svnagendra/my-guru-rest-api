@@ -20,7 +20,11 @@ app.post('/', function(req, res) {
 });
 
 //Custom application methods
-app.get('/api/name', defaultapi.name);
+app.get('/api/name', function(req, res) {
+  res.send({
+    "Output": "Hello World! My Name is Test. You called Myguru-Api"
+  });
+});
 
 app.listen(port);
 module.exports = app;
