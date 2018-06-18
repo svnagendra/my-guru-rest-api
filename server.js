@@ -5,7 +5,7 @@ var app = express();
 
 app.get('/', function(req, res) {
   res.send({
-    "Output": "Hello World!"
+    "Output": "Hello World! This is a My guru App. An awesome app for talent to meet gurus."
   });
 });
 
